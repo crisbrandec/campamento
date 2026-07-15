@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exiliados: Bienvenidos a Babilonia - Tonsupa 2026</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Cinzel:wght@700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandDark: '#0d0d0f',
+                        brandGold: '#f0a230',
+                        brandSand: '#c8b899',
+                        brandTeal: '#004e5f',
+                        brandGray: '#3a3a3f',
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        logo: ['Cinzel', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-[#0d0d0f] text-slate-100 antialiased selection:bg-[#f0a230] selection:text-black">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 bg-[#0d0d0f]/90 backdrop-blur-md border-b border-[#3a3a3f]/40 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Brand Logo -->
+            <a href="#" class="flex flex-col items-start leading-none">
+                <span class="font-logo text-xl md:text-2xl font-black tracking-[0.15em] text-[#f0a230]">
+                    EXILIADOS
+                </span>
+                <span class="text-[9px] font-bold tracking-[0.25em] text-[#c8b899] uppercase mt-0.5">
+                    Bienvenidos a Babilonia
+                </span>
+            </a>
+            
+            <nav class="hidden md:flex space-x-8 font-semibold text-xs uppercase tracking-widest text-slate-400">
+                <a href="#proposito" class="hover:text-[#f0a230] transition-colors">Propósito</a>
+                <a href="#que-es" class="hover:text-[#f0a230] transition-colors">¿Qué es?</a>
+                <a href="#cronograma" class="hover:text-[#f0a230] transition-colors">Eje Doctrinal</a>
+                <a href="#metodo" class="hover:text-[#f0a230] transition-colors">Devocionales</a>
+            </nav>
+            
+            <a href="https://wa.link/h0kec4" target="_blank" class="bg-[#f0a230] hover:bg-white text-[#0d0d0f] font-extrabold px-6 py-2.5 rounded-xl text-xs uppercase tracking-wider transition-all shadow-md shadow-[#f0a230]/10 hover:shadow-[#f0a230]/20">
+                Reservar Plaza
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-24 lg:pt-48 lg:pb-36 bg-[#0d0d0f] overflow-hidden text-white border-b border-[#3a3a3f]/20">
+        <!-- Background decorative details -->
+        <div class="absolute inset-0 bg-gradient-to-tr from-[#0d0d0f] via-[#0d0d0f]/95 to-[#004e5f]/20 opacity-90 z-0"></div>
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-[#f0a230]/10 rounded-full blur-3xl z-0"></div>
+        <div class="absolute bottom-10 left-10 w-80 h-80 bg-[#004e5f]/10 rounded-full blur-3xl z-0"></div>
+
+        <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+            <span class="inline-flex items-center gap-2 bg-[#f0a230]/10 text-[#f0a230] text-xs font-bold px-4 py-1.5 rounded-full mb-8 border border-[#f0a230]/25 uppercase tracking-widest">
+                Campamento de Jóvenes • Tonsupa
+            </span>
+            
+            <!-- Large Styled Logo Badge inside Hero -->
+            <div class="mb-8 inline-block">
+                <h1 class="font-logo text-5xl md:text-8xl font-black tracking-[0.12em] text-[#f0a230] leading-none drop-shadow-lg">
+                    EXILIADOS
+                </h1>
+                <p class="text-sm md:text-lg font-bold tracking-[0.4em] text-[#c8b899] uppercase mt-2">
+                    Bienvenidos a Babilonia
+                </p>
+            </div>
+
+            <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-12 leading-relaxed font-light">
+                Una generación que, en medio de un mundo cambiante e inestable, permanece <strong class="text-white font-semibold">firme en Cristo</strong>. Un llamado a vivir con identidad, integridad y propósito, reflejando a Dios en nuestra forma de vivir.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+                <a href="https://wa.link/h0kec4" target="_blank" class="w-full sm:w-auto bg-[#f0a230] hover:bg-white text-black font-extrabold px-8 py-4 rounded-xl transition duration-300 shadow-lg shadow-[#f0a230]/20 text-center text-lg uppercase tracking-wide">
+                    ¡Reservar Mi Lugar ($55)!
+                </a>
+                <a href="#proposito" class="w-full sm:w-auto bg-white/5 hover:bg-white/10 text-white font-bold px-8 py-4 rounded-xl transition border border-[#3a3a3f] text-center text-lg">
+                    Conocer Más
+                </a>
+            </div>
+
+            <!-- Context Info Bar -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left border border-[#3a3a3f]/40 bg-white/[0.02] backdrop-blur-md rounded-2xl p-8 max-w-4xl mx-auto">
+                <div class="flex items-start space-x-4">
+                    <span class="text-3xl text-[#f0a230]">📍</span>
+                    <div>
+                        <h4 class="font-bold text-[#c8b899] text-xs uppercase tracking-wider">Ubicación</h4>
+                        <p class="text-lg font-extrabold text-white">Tonsupa, Ecuador</p>
+                        <p class="text-xs text-slate-400">Frente al mar</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4 border-t md:border-t-0 md:border-x border-[#3a3a3f]/40 pt-4 md:pt-0 md:px-6">
+                    <span class="text-3xl text-[#f0a230]">💵</span>
+                    <div>
+                        <h4 class="font-bold text-[#c8b899] text-xs uppercase tracking-wider">Inversión Especial</h4>
+                        <p class="text-lg font-extrabold text-[#f0a230]">$55.00 USD</p>
+                        <p class="text-xs text-slate-400">Todo incluido</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4 border-t md:border-t-0 pt-4 md:pt-0">
+                    <span class="text-3xl text-[#f0a230]">📖</span>
+                    <div>
+                        <h4 class="font-bold text-[#c8b899] text-xs uppercase tracking-wider">Versículo Base</h4>
+                        <p class="text-lg font-extrabold text-white">Filipenses 2:14-15</p>
+                        <p class="text-xs text-slate-400">Luz en el mundo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Versículo Destacado -->
+    <section class="py-20 bg-[#0d0d0f] border-b border-[#3a3a3f]/20">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <span class="text-xs font-extrabold text-[#f0a230] uppercase tracking-widest block mb-4">La Palabra de Dios</span>
+            <blockquote class="font-serif text-2xl md:text-3xl text-[#c8b899] italic leading-relaxed mb-8">
+                "Haced todo sin murmuraciones y contiendas, para que seáis irreprensibles y sencillos, hijos de Dios sin mancha en medio de una generación maligna y perversa, en medio de la cual resplandecéis como luminares en el mundo."
+            </blockquote>
+            <cite class="text-slate-400 font-bold tracking-wide uppercase text-sm block">— Filipenses 2:14-15</cite>
+        </div>
+    </section>
+
+    <!-- Propósito Inspirado en Daniel -->
+    <section id="proposito" class="py-24 bg-[#0d0d0f] border-b border-[#3a3a3f]/20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-xs font-extrabold text-[#f0a230] uppercase tracking-widest block">El Personaje de Inspiración</span>
+                    <h2 class="text-3xl md:text-5xl font-black text-white tracking-tight leading-tight">
+                        Daniel en Babilonia: <br>Un Corazón Firme
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed text-lg font-light">
+                        Así como Daniel vivió de forma íntegra en medio de Babilonia, hoy los jóvenes estamos llamados a vivir firmes en Cristo frente a un mundo que presiona, moldea e influye de forma constante.
+                    </p>
+                    <div class="bg-[#004e5f]/20 border-l-4 border-[#f0a230] p-5 rounded-r-xl">
+                        <p class="text-[#c8b899] font-bold text-md leading-relaxed italic">
+                            "No se trata de escapar del mundo, sino de aprender a vivir de forma radicalmente diferente dentro de él."
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white/[0.02] border border-[#3a3a3f]/40 p-8 rounded-2xl space-y-3">
+                        <div class="w-12 h-12 bg-[#004e5f]/30 rounded-xl flex items-center justify-center text-xl text-[#f0a230]">👤</div>
+                        <h3 class="font-extrabold text-lg text-white">Identidad</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Saber quiénes somos en Cristo y reclamar nuestra posición como hijos amados e inquebrantables.</p>
+                    </div>
+                    <div class="bg-white/[0.02] border border-[#3a3a3f]/40 p-8 rounded-2xl space-y-3">
+                        <div class="w-12 h-12 bg-[#004e5f]/30 rounded-xl flex items-center justify-center text-xl text-[#f0a230]">💎</div>
+                        <h3 class="font-extrabold text-lg text-white">Integridad</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Decisiones correctas y convicciones puras, aun cuando nadie nos esté observando.</p>
+                    </div>
+                    <div class="bg-white/[0.02] border border-[#3a3a3f]/40 p-8 rounded-2xl space-y-3">
+                        <div class="w-12 h-12 bg-[#004e5f]/30 rounded-xl flex items-center justify-center text-xl text-[#f0a230]">🌟</div>
+                        <h3 class="font-extrabold text-lg text-white">Propósito</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Resplandecer como luminarias en medio de una generación que necesita desesperadamente de Dios.</p>
+                    </div>
+                    <div class="bg-white/[0.02] border border-[#3a3a3f]/40 p-8 rounded-2xl space-y-3">
+                        <div class="w-12 h-12 bg-[#004e5f]/30 rounded-xl flex items-center justify-center text-xl text-[#f0a230]">🛡️</div>
+                        <h3 class="font-extrabold text-lg text-white">Resistencia</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Permanecer firmes ante las corrientes, presiones de grupo y filosofías modernas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qué es vs Qué NO es -->
+    <section id="que-es" class="py-24 bg-[#0d0d0f] border-b border-[#3a3a3f]/20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-extrabold text-[#f0a230] uppercase tracking-widest block mb-2">Claridad de Propósito</span>
+                <h2 class="text-3xl md:text-4xl font-black text-white tracking-tight">¿Qué define nuestra experiencia?</h2>
+                <p class="text-slate-400 mt-3 text-md">Queremos que sepas exactamente qué esperar de esta experiencia transformadora.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Qué SÍ es -->
+                <div class="bg-[#004e5f]/10 border border-[#004e5f]/30 rounded-3xl p-8 md:p-10">
+                    <h3 class="text-xl font-black text-[#f0a230] mb-6 flex items-center gap-2">
+                        <span class="text-2xl">✔️</span> Lo que SÍ es el Campamento
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <span class="text-[#f0a230] text-lg font-bold mt-0.5">✦</span>
+                            <div>
+                                <strong class="text-white block">Espacio intencional de formación</strong>
+                                <span class="text-[#c8b899] text-sm">Enfoque total en el crecimiento de tu madurez espiritual.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-[#f0a230] text-lg font-bold mt-0.5">✦</span>
+                            <div>
+                                <strong class="text-white block">Centrado en la Palabra</strong>
+                                <span class="text-[#c8b899] text-sm">Estudio enfocado del Libro de Daniel y Filipenses.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-[#f0a230] text-lg font-bold mt-0.5">✦</span>
+                            <div>
+                                <strong class="text-white block">Experiencia integral</strong>
+                                <span class="text-[#c8b899] text-sm">Combinamos enseñanza bíblica, reflexión íntima y aplicación práctica.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-[#f0a230] text-lg font-bold mt-0.5">✦</span>
+                            <div>
+                                <strong class="text-white block">Llamado a decisiones reales</strong>
+                                <span class="text-[#c8b899] text-sm">No es solo para escuchar, sino para aplicar verdades que transforman.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Qué NO es -->
+                <div class="bg-white/[0.01] border border-[#3a3a3f]/40 rounded-3xl p-8 md:p-10">
+                    <h3 class="text-xl font-black text-slate-300 mb-6 flex items-center gap-2">
+                        <span class="text-2xl">❌</span> Lo que NO es el Campamento
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <span class="text-slate-500 text-lg font-bold mt-0.5">✦</span>
+                            <div>
+                                <strong class="text-slate-200 block">Solo un paseo recreativo</strong>
+                                <span class="text-slate-400 text-sm">Aunque nos divertiremos en la playa, nuestra meta va mucho más profundo.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-slate-500 text-lg font-bold mt-0.5">✦</span>
+                            <div>
+                                <strong class="text-slate-200 block">Actividad sin propósito espiritual</strong>
+                                <span class="text-slate-400 text-sm">Cada dinámica, juego y charla está intencionadamente planificado.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-slate-500 text-lg font-bold mt-0.5">✦</span>
+                            <div>
+                                <strong class="text-slate-200 block">Desorganización o improvisación</strong>
+                                <span class="text-slate-400 text-sm">Contamos con un equipo enfocado, comprometido y con dirección clara.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-slate-500 text-lg font-bold mt-0.5">✦</span>
+                            <div>
+                                <strong class="text-slate-200 block">Emoción momentánea sin cambio real</strong>
+                                <span class="text-slate-400 text-sm">Apuntamos a la edificación de convicciones firmes que perduren en el tiempo.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planificación / Eje Doctrinal Diario -->
+    <section id="cronograma" class="py-24 bg-[#0d0d0f] border-b border-[#3a3a3f]/20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-extrabold text-[#f0a230] uppercase tracking-widest block mb-2">La Ruta del Campamento</span>
+                <h2 class="text-3xl md:text-4xl font-black text-white tracking-tight">Eje Doctrinal y Programa</h2>
+                <p class="text-slate-400 mt-3 text-md">Cada día del campamento tiene un norte espiritual estructurado para ti:</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Día 1 -->
+                <div class="bg-[#0d0d0f] rounded-3xl p-8 border border-[#3a3a3f]/40 relative overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="inline-block bg-[#3a3a3f]/40 text-[#c8b899] font-extrabold text-xs px-3 py-1 rounded-full mb-6 uppercase tracking-wider">
+                            Día 1
+                        </div>
+                        <h4 class="text-2xl font-black text-white mb-2">Fe sin quejas</h4>
+                        <p class="text-sm text-[#f0a230] font-bold mb-4 uppercase tracking-wider flex items-center gap-1.5">
+                            <span class="w-2 h-2 bg-[#f0a230] rounded-full"></span> Enfoque: Actitud
+                        </p>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Aprenderemos a cultivar un corazón agradecido que se apoya en la soberanía de Dios, desterrando las quejas para reflejar su paz.
+                        </p>
+                    </div>
+                    <div class="border-t border-[#3a3a3f]/30 pt-4 mt-auto">
+                        <span class="text-xs font-semibold text-slate-500 uppercase">Base Bíblica</span>
+                        <p class="text-sm font-extrabold text-slate-300">Filipenses 2:14</p>
+                    </div>
+                </div>
+
+                <!-- Día 2 -->
+                <div class="bg-[#0d0d0f] rounded-3xl p-8 border-2 border-[#f0a230]/40 relative overflow-hidden flex flex-col justify-between">
+                    <div class="absolute top-0 right-0 bg-[#f0a230] text-black font-extrabold text-[10px] px-4 py-1 uppercase tracking-widest rounded-bl-xl">
+                        Doble Bloque
+                    </div>
+                    <div>
+                        <div class="inline-block bg-[#f0a230]/10 text-[#f0a230] font-extrabold text-xs px-3 py-1 rounded-full mb-6 uppercase tracking-wider">
+                            Día 2
+                        </div>
+                        <h4 class="text-2xl font-black text-white mb-2">Integridad Real e Identidad</h4>
+                        <p class="text-sm text-[#f0a230] font-bold mb-4 uppercase tracking-wider flex items-center gap-1.5">
+                            <span class="w-2 h-2 bg-[#f0a230] rounded-full"></span> Enfoque: Carácter e Identidad
+                        </p>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Profundizaremos en vivir sin tacha, siendo irreprensibles como hijos de Dios y afirmando quiénes somos verdaderamente en Cristo.
+                        </p>
+                    </div>
+                    <div class="border-t border-[#3a3a3f]/30 pt-4 mt-auto">
+                        <span class="text-xs font-semibold text-slate-500 uppercase">Base Bíblica</span>
+                        <p class="text-sm font-extrabold text-slate-300">Filipenses 2:15a & 2:15b</p>
+                    </div>
+                </div>
+
+                <!-- Día 3 -->
+                <div class="bg-[#0d0d0f] rounded-3xl p-8 border border-[#3a3a3f]/40 relative overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="inline-block bg-[#3a3a3f]/40 text-[#c8b899] font-extrabold text-xs px-3 py-1 rounded-full mb-6 uppercase tracking-wider">
+                            Día 3
+                        </div>
+                        <h4 class="text-2xl font-black text-white mb-2">Brillar en el mundo</h4>
+                        <p class="text-sm text-[#f0a230] font-bold mb-4 uppercase tracking-wider flex items-center gap-1.5">
+                            <span class="w-2 h-2 bg-[#f0a230] rounded-full"></span> Enfoque: Propósito
+                        </p>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Descubriremos el llamado definitivo: salir a impactar nuestro entorno siendo luminarias de esperanza y verdad en medio de la oscuridad.
+                        </p>
+                    </div>
+                    <div class="border-t border-[#3a3a3f]/30 pt-4 mt-auto">
+                        <span class="text-xs font-semibold text-slate-500 uppercase">Base Bíblica</span>
+                        <p class="text-sm font-extrabold text-slate-300">Filipenses 2:15c</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Devocionales -->
+    <section id="metodo" class="py-24 bg-[#0d0d0f]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="bg-[#004e5f]/15 border border-[#004e5f]/30 rounded-3xl text-white p-8 md:p-14 relative overflow-hidden">
+                <div class="absolute bottom-0 right-0 w-80 h-80 bg-[#f0a230]/5 rounded-full blur-3xl"></div>
+                <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    <div class="lg:col-span-5 space-y-6">
+                        <span class="text-xs font-extrabold text-[#f0a230] uppercase tracking-widest block">Metodología Devocional</span>
+                        <h2 class="text-3xl md:text-5xl font-black tracking-tight leading-tight">
+                            Comienza tu día con un firme propósito
+                        </h2>
+                        <p class="text-slate-300 leading-relaxed text-sm md:text-base font-light">
+                            Cada mañana antes del desayuno, nos reuniremos en grupos pequeños por cabaña. Este es un espacio de 15 a 20 minutos intencionalmente estructurado para alinear nuestro corazón y actitud con el tema del día.
+                        </p>
+                        
+                        <div class="border-l-2 border-[#f0a230] pl-4 py-1 text-slate-300 text-sm italic">
+                            Intencionalidad diaria: <br>
+                            <strong>Mañana:</strong> Decide • <strong>Día:</strong> Practica • <strong>Noche:</strong> Reflexiona
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-7 bg-[#0d0d0f]/60 border border-[#3a3a3f]/40 rounded-2xl p-6 md:p-8 space-y-6">
+                        <h3 class="font-extrabold text-xl text-slate-100 border-b border-[#3a3a3f]/40 pb-3">Estructura del Devocional</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="space-y-1">
+                                <span class="text-[#f0a230] font-black text-lg block">01. Apertura</span>
+                                <p class="text-xs text-slate-400">Introducción y preparación del corazón.</p>
+                            </div>
+                            <div class="space-y-1">
+                                <span class="text-[#f0a230] font-black text-lg block">02. Lectura</span>
+                                <p class="text-xs text-slate-400">Análisis reflexivo de la base bíblica diaria.</p>
+                            </div>
+                            <div class="space-y-1">
+                                <span class="text-[#f0a230] font-black text-lg block">03. Reflexión</span>
+                                <p class="text-xs text-slate-400">Profundización personal sobre el enfoque doctrinal.</p>
+                            </div>
+                            <div class="space-y-1">
+                                <span class="text-[#f0a230] font-black text-lg block">04. Conversación</span>
+                                <p class="text-xs text-slate-400">Intercambio de ideas, vivencias y dudas en confianza.</p>
+                            </div>
+                            <div class="space-y-1">
+                                <span class="text-[#f0a230] font-black text-lg block">05. Desafío</span>
+                                <p class="text-xs text-slate-400">Definir un reto de acción real para ejecutar en el día.</p>
+                            </div>
+                            <div class="space-y-1">
+                                <span class="text-[#f0a230] font-black text-lg block">06. Oración</span>
+                                <p class="text-xs text-slate-400">Oración de cobertura y rendición mutua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="py-24 bg-gradient-to-b from-[#0d0d0f] to-[#004e5f]/30 text-white relative overflow-hidden border-t border-[#3a3a3f]/20">
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10 space-y-8">
+            <span class="inline-block bg-[#f0a230]/10 text-[#f0a230] text-xs font-bold px-4 py-1.5 rounded-full border border-[#f0a230]/25 uppercase tracking-widest">
+                ¡Plazas Limitadas!
+            </span>
+            <h2 class="font-logo text-4xl md:text-6xl font-black tracking-tight leading-tight">
+                No permitas que Babilonia <br class="hidden md:inline">
+                defina quién eres
+            </h2>
+            <p class="text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
+                Tonsupa te espera para vivir una experiencia de fe real, amistades verdaderas y transformación profunda. Todo por una inversión de $55.00 USD.
+            </p>
+            <div>
+                <a href="https://wa.link/h0kec4" target="_blank" class="inline-block bg-[#f0a230] hover:bg-white text-black font-black text-xl px-10 py-5 rounded-2xl transition duration-300 shadow-xl shadow-[#f0a230]/25 tracking-wide uppercase">
+                    Reservar Mi Plaza de Forma Segura
+                </a>
+            </div>
+            <p class="text-xs text-slate-400">
+                Al hacer clic, serás redirigido directamente a nuestro WhatsApp oficial para coordinar el registro y método de pago.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0d0d0f] border-t border-[#3a3a3f]/20 py-12 text-slate-500 text-xs">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="font-bold text-[#c8b899] uppercase tracking-widest font-logo">EXILIADOS © 2026</p>
+            <p>Hecho con propósito para impactar la juventud de hoy.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
